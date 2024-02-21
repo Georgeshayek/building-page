@@ -2,11 +2,7 @@
 import Link from "next/link";
 import Image from 'next/image'
 import { useState } from "react";
-// .navbar{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
+
 const Navbar=()=>{
     const [show, setShow] = useState(false);
     const toggleShow = () => {
