@@ -1,23 +1,19 @@
-const About=()=>{
+import Image from "next/image";
+
+const Aboutus=(props)=>{
     return(
         <div className="bg-[#333] text-white text-center  pb-3">
             <div className="container mx-auto">
-
             <h1 className="text-4xl p-6"> About</h1>
+			<div className={`flex  items-start	justify-between max-lg:flex-col`}>
 
-			<p className="mx-[15%] text-[1.25rem] max-lg:mx-[7.5%] text-[0.85rem]">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a nunc
-				metus. Pellentesque iaculis ante ante, in interdum quam varius dictum.
-				Maecenas tincidunt sem nisl, sit amet ullamcorper erat feugiat sit amet.
-				Etiam id pharetra elit. In hac habitasse platea dictumst. Nam vehicula,
-				justo at consectetur eleifend, orci sapien pretium nisl, non dapibus
-				nibh ex ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing
-				elit. Vivamus risus arcu, tincidunt pellentesque nisi nec, facilisis
-				luctus diam. Maecenas luctus cursus lectus eget iaculis. Duis efficitur
-				mauris ac semper ullamcorper. 
+			<p className={`${props.imageUrl?"mx-[5%] text-[1.15rem]":"mx-[15%] text-[1.25rem]"}  max-lg:mx-[7.5%] text-[0.85rem]`}>
+				{props.paragraph}
 			</p>
+			{props.imageUrl&&<Image className={`object-cover self-center m-auto mx-4 rounded max-lg:m-2 ${props.placement?"order-first":"order-last"}`} width={300} height={300} src={props.imageUrl} alt="city1" />}
+		</div>
 		</div>
         </div>
     )
 }
-export default About;
+export default Aboutus;
