@@ -1,0 +1,6 @@
+.backgroundImage {
+
+    background-image: url('/building backgroubd.jpg');
+    background-position: center;
+    background-size: cover;
+  }

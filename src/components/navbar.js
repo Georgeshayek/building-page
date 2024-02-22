@@ -18,7 +18,7 @@ const Navbar=()=>{
                     <Link href="#"><Image src="/logo.jpg" alt=" Logo" width={50} height={50}/></Link>
                 </div>
                 <button id="burger-btn" className="  block text-white lg:hidden" onClick={toggleShow}>&#9776;</button>
-                <ul className={`flex justify-center  max-lg:flex-col ${!show ? 'max-lg:hidden' : 'max-lg:block'} max-lg:absolute max-lg:top-10 max-lg:left-0 max-lg:bg-[#555] max-lg:w-[100%] px-[40px] max-lg:z-50`}>                
+                <ul className={`flex justify-center  max-lg:flex-col ${!show ? 'max-lg:hidden' : 'max-lg:block'} max-lg:absolute max-lg:top-[60px] max-lg:left-0 max-lg:bg-[#333] max-lg:p-1 max-lg:w-[100%] px-[40px] max-lg:z-50`}>                
 				<li className="max-lg:text-center  lg:inline-block lg:mr-[10px]"><Link className="text-white py-10 px-[10px] hover:text-[#333]" href="#">Home</Link></li>
 				<li className=" max-lg:text-center lg:inline-block lg:mr-[10px]"><Link className="text-white py-5 px-[10px] hover:text-[#333]" href="#">About</Link></li>
 				<li className="max-lg:text-center lg:inline-block lg:mr-[10px]"><Link className="text-white py-5 px-[10px] hover:text-[#333]" href="#">Contact</Link></li>

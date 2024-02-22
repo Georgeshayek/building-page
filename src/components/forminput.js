@@ -1,10 +1,11 @@
+import styles from "./form.module.css"
 const FormInputs=()=>{
 
     return(
-    <div className="bg-center bg-cover" style={{ backgroundImage: "url('/building backgroubd.jpg')"}}>
+    <div className={styles.backgroundImage} >
     <div className="container mx-auto">
         <h1 className=" text-center text-4xl p-6">Contact us</h1>
-<form className="max-w-500 mx-auto my-5" action="/" method="POST">
+<form className="max-w-[600px] mx-auto my-5" action="/" method="POST">
     <div className="flex flex-col justify-center items-center">
     <label htmlfor="name">Name:</label>
     <input type="text" id="name" name="name" className="w-[50%] p-1 rounded-md m-1 border-2 border-slate-400 max-lg:w-[80%]" required/>
