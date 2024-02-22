@@ -10,9 +10,9 @@ const Footer=()=>{
                 <Link href="#"><Image src="/logo.jpg" width={50} height={50} alt="Company Logo"/></Link>
             </div>
             <div className="flex max-lg:flex-col">
-                <Link className="text-white mr-4" href="#">Home</Link>
-                <Link className="text-white mr-4" href="#">About</Link>
-                <Link className="text-white mr-4" href="#">Contact</Link>
+                <Link className="text-white mr-4" href="/">Home</Link>
+                <Link className="text-white mr-4" href="/about">About</Link>
+                <Link className="text-white mr-4" href="/contact">Contact</Link>
             </div>
             <div className="flex">
                 <Link className="mr-2" href="#"><Image src="/linkedin.png" width={30} height={30} alt="linkedin"/></Link>
