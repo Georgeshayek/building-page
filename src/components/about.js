@@ -5,7 +5,7 @@ const Aboutus=(props)=>{
         <div className="bg-[#333] text-white text-center  pb-3">
             <div className="container mx-auto">
             <h1 className="text-4xl p-6"> About</h1>
-			<div className={`flex  items-start	justify-between max-lg:flex-col`}>
+			<div className={`flex items-center justify-between max-lg:flex-col p-2`}>
 
 			<p className={`${props.imageUrl?"mx-[5%] text-[1.15rem]":"mx-[15%] text-[1.25rem]"}  max-lg:mx-[7.5%] text-[0.85rem]`}>
 				{props.paragraph}
