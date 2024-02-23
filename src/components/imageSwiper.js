@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "./swiperss.css"
 const ImageSwiper = () => {
 	const isMaxLg = useMediaQuery({ maxWidth: 1023 });
 
@@ -33,10 +34,12 @@ const ImageSwiper = () => {
 					onSwiper={(swiper) => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
 					className="text-sm text-[#555]"
-				>
+                    
+                      >
+				
 					{images.map((img, i) => (
 						<SwiperSlide>
-							<div key={i} className="flex flex-col max-lg:items-center">
+							<div key={i} className="flex flex-col items-center">
 								<Image
 									className="object-cover mx-4 rounded max-lg:mx-0  h-[250px] w-[350px] "
 									width={250}
@@ -45,7 +48,7 @@ const ImageSwiper = () => {
 									alt={`city${i + 1}`}
 								/>
 								<h4>{img.title}</h4>
-								<div className="mt-7">
+								<div className="mt-8">
 									<div className="swiper-pagination" />
 								</div>
 							</div>
