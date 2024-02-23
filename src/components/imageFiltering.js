@@ -33,7 +33,7 @@ const ImageFiltering = () => {
 				<div className="flex justify-around max-lg:flex-col max-lg:items-center ">
 					{filterImage.map((img, i) => (
 						<div key={i} className="flex flex-col">
-							<Image
+							<Image key={i}
 								className="object-cover mx-4 rounded max-lg:m-2 h-[250px] w-[350px]"
 								width={250}
 								height={200}

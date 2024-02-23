@@ -4,6 +4,8 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import { GrAdd,GrSubtract  } from "react-icons/gr";
+
 function Icon({ id, open }) {
     return (
       <svg
@@ -25,7 +27,7 @@ export function DefAccordion() {
  
   return (
     <>
-      <Accordion open={open === 1} className="p-4 bg-slate-500 text-white" icon={<Icon id={1} open={open} />}>
+      <Accordion open={open === 1} className="p-4 bg-slate-500 text-white" icon={open===1?<GrSubtract/>:<GrAdd/>}>
         <AccordionHeader className="flex justify-between" onClick={() => handleOpen(1)}>What is Material Tailwind?</AccordionHeader>
         <AccordionBody className={`${open === 1 ? "" : "text-transparent"}`}>
           We&apos;re not always in the position that we want to be at. We&apos;re constantly
@@ -33,7 +35,7 @@ export function DefAccordion() {
           ourselves and actualize our dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} className="p-4 bg-slate-500 text-white" icon={<Icon id={2} open={open} />}>
+      <Accordion open={open === 2} className="p-4 bg-slate-500 text-white" icon={open===2?<GrSubtract/>:<GrAdd/>}>
         <AccordionHeader className="flex justify-between" onClick={() => handleOpen(2)}>What is Material Tailwind?</AccordionHeader>
         <AccordionBody className={`${open === 2 ? "" : "text-transparent"}`}>
           We&apos;re not always in the position that we want to be at. We&apos;re constantly
