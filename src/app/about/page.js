@@ -2,9 +2,11 @@
 const { default: HeroImage } = require("@/components/heroImage");
 import Aboutus from "@/components/about";
 import ImageSwiper from "@/components/imageSwiper";
+
 const About = () => {
 	return (
 		<>
+		
 			<HeroImage
 				imageUrl="/city1.jpg"
 				title="More About us"

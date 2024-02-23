@@ -7,7 +7,7 @@ const Footer=()=>{
         <div className="container mx-auto">
         <div className="flex justify-between items-center p-2 mx-2">
             <div className="logo">
-                <Link href="#"><Image src="/logo.jpg" width={50} height={50} alt="Company Logo"/></Link>
+                <Link href="/"><Image src="/logo.jpg" width={50} height={50} alt="Company Logo"/></Link>
             </div>
             <div className="flex max-lg:flex-col">
                 <Link className="text-white mr-4" href="/">Home</Link>

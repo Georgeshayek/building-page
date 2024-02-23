@@ -5,11 +5,20 @@ import Images from "@/components/images";
 import FormInputs from "@/components/forminput";
 import Footer from "@/components/footer";
 import Aboutus from "@/components/about";
+import Head from "next/head";
+
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>Building page</title>
+				<meta
+					name="description"
+					content="I hope this tutorial is helpful for you"
+				/>
+			</Head>
 			<HeroImage
-				imageUrl="/hero.jpg"
+				imageUrl="/hero-min.jpg"
 				title="Welcome to the website"
 				paragraph=" This is a simple hero image and some text that describes what this site is about."
 			/>

@@ -16,7 +16,7 @@ const Navbar=()=>{
             <div className="container mx-auto">
             <div className="flex justify-between items-center relative">
                 <div >
-                    <Link href="#"><Image src="/logo.jpg" alt=" Logo" width={50} height={50}/></Link>
+                    <Link href="/"><Image src="/logo.jpg" alt=" Logo" width={50} height={50}/></Link>
                 </div>
                 <button id="burger-btn" className="  block text-white lg:hidden" onClick={toggleShow}>&#9776;</button>
                 <ul className={`flex justify-center  max-lg:flex-col ${!show ? 'max-lg:hidden' : 'max-lg:block'} max-lg:absolute max-lg:top-[60px] max-lg:left-0 max-lg:bg-[#333] max-lg:p-1 max-lg:w-[100%] px-[40px] max-lg:z-50`}>                
